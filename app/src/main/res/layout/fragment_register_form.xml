@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#021139"
+    tools:context=".auth.Register.view.RegisterFormFragment">
+
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00B83939"
+        android:text="Skip>>"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/registration"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-30dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:paddingBottom="50dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lname_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you LName"
+                    app:endIconMode="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fname_txt"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:background="@color/white"
+                        android:drawableTint="@color/purple_200"
+                        android:drawableRight="@drawable/person_24"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColorHint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fname_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you FName"
+                    app:endIconMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:drawableTint="@color/purple_200"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/person_24"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColorHint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you Email"
+                    app:endIconMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lname_txt"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegisterEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="48dp"
+                        android:background="@color/white"
+                        android:drawableTint="@color/purple_200"
+                        android:drawableRight="@drawable/authemail_24"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColorHint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you Password"
+                    app:endIconMode="password_toggle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email_txt"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegisterPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:background="@color/white"
+                        android:drawableTint="@color/purple_200"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColorHint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTintMode="src_over"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="25sp"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/purple_200"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintWidth_percent="0.9"
+                    android:text="@string/register"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_txt" />
+
+                <TextView
+                    android:id="@+id/txtHaveAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/haveAcc"
+                    android:textColor="#149EDC"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you Password again"
+                    app:endIconMode="password_toggle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/password_txt"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtConfirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:background="@color/white"
+                        android:drawableTint="@color/purple_200"
+                        android:textColorHint="@color/purple_200"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Please enter you Phone"
+                    app:endIconMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/password_txt2"
+                    android:background="@color/black"
+                    app:endIconTint="@color/purple_200"
+                    android:foregroundTint="@color/purple_200"
+                    android:textColorHint="@color/purple_200"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:minHeight="48dp"
+                        android:background="@color/white"
+                        android:drawableTint="@color/purple_200"
+                        android:drawableRight="@drawable/phone_24"
+                        android:textColorHint="@color/purple_200"
+                        android:foregroundTint="@color/purple_200"
+                        android:textColor="@color/purple_200"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/registerProgressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/fname_txt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/my_person"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

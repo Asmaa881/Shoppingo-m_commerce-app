@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".me.view.setting.AddNewAddressFragment">
+
+    <TextView
+        android:id="@+id/txtPleaseClickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_here_to_choose_location"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chooseLocationImg"
+        app:layout_constraintEnd_toEndOf="@+id/chooseLocationImg"
+        app:layout_constraintStart_toStartOf="@+id/chooseLocationImg"
+        />
+
+    <ImageView
+        android:id="@+id/chooseLocationImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintHeight_percent="0.3"
+        android:src="@drawable/add_new_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseLocationImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addressDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chooseLocationImg"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/txtAddressLine1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/custom_input"
+                android:hint="Adress Line1"
+                android:textSize="16sp"
+                android:textColor="@color/purple_200"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                app:layout_constraintWidth_percent="0.8"/>
+            <EditText
+                android:id="@+id/txtAddressLine2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddressLine1"
+                android:background="@drawable/custom_input"
+                android:hint="Adress Line2"
+                android:textSize="16sp"
+                android:textColor="@color/purple_200"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent="0.8"
+                />
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtAddressLine2"
+                android:hint="@string/phone1"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"
+                android:inputType="phone"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent="0.8"
+                />
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPhoneNumber"
+                android:text="@string/country"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent="0.8" />
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCountry"
+                android:text="@string/city"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent="0.8"
+                />
+            <TextView
+                android:id="@+id/txtZipCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCity"
+                android:text="@string/zip"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintWidth_percent="0.8"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveNewAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="src_over"
+            android:padding="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/save_address"
+            android:textSize="20sp"
+            app:backgroundTint="@color/buttons"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/noInternetLayoutAddNewAddress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/noInternetImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/internet_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

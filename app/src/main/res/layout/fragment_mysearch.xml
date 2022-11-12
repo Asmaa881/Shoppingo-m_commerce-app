@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".search.view.MysearchFragment"
+    android:background="@color/white">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/edtSearch"
+        android:dropDownAnchor="@id/edtSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        android:backgroundTint="@color/buttons"
+        android:foregroundTint="@color/buttons"
+        android:textColorHighlight="@color/buttons"
+        android:ems="10"
+        android:textSize="10dp"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/my_search_24"
+
+        app:layout_constraintBottom_toBottomOf="@+id/edtSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searhProductRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch" />
+    <ImageView
+        android:id="@+id/noDataSearchImg"
+        android:layout_width="151dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/noresults"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch"
+        />
+
+    <TextView
+        android:id="@+id/txtNoSearchData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/noResultFound"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/noDataSearchImg"
+        app:layout_constraintStart_toStartOf="@+id/noDataSearchImg"
+        app:layout_constraintTop_toBottomOf="@+id/noDataSearchImg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

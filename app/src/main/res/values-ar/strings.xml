@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shoppingoo</string>
+    <string name="brandname">اسم العلامة التجارية</string>
+    <string name="reviewerName">الاسم</string>
+    <string name="comment">التعليق</string>
+    <string name="brand">العلامات التجارية</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="details">التفاصيل</string>
+    <string name="number">0</string>
+    <string name="favourite">المفضلة</string>
+    <string name="AddToCard">أضافة الى المفضلة</string>
+    <string name="registration">تسجيل الدخول</string>
+    <string name="register">التسجيل</string>
+    <string name="forgetPass">نسيت الباسورد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="createNewAcc"><u>إذا لم يكن لديك حساب يرجى الضغط هنا</u></string>
+    <string name="haveAcc"><u>إذا كان لديك بالفعل حساب انقر هنا</u></string>
+    <string name="removeItem">حذف العنصر</string>
+    <string name="message">هل انت متاكد من حذف العنصر؟</string>
+    <string name="search">ابحث هنا</string>
+    <string name="All">الكل</string>
+    <string name="Me">أنا</string>
+    <string name="Welcome">مرحبا</string>
+    <string name="Others">اخرى</string>
+    <string name="More">أكثر</string>
+    <string name="pleaseLogin">الرجاء تسجيل الدخول</string>
+    <string name="Login">" تسجيل الدخول"</string>
+    <string name="WishList">المفضلة</string>
+    <string name="Price">السعر:</string>
+    <string name="CreatedBy">"انشأ "</string>
+    <string name="product_name">أسم المنتج</string>
+    <string name="category">التصنيفات</string>
+    <string name="women">النساء</string>
+    <string name="men">الرجال</string>
+    <string name="kids">الاطفال</string>
+    <string name="sales">العروض</string>
+    <string name="settings">الاعدادت</string>
+    <string name="language">اللغة</string>
+    <string name="english">اللغة الانجليزية</string>
+    <string name="arabic">اللغة العربية</string>
+    <string name="currency">العملة</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="egp">جنيه مصرى</string>
+    <string name="edit">تعديل</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الثانى</string>
+    <string name="phone">رقم الموبايل</string>
+    <string name="address">العنوان</string>
+    <string name="alex">اسكندرية</string>
+    <string name="add_new_address">اضافة عنوان جديد</string>
+    <string name="country">القارة:</string>
+    <string name="city">المدينة:</string>
+    <string name="area">المنطقة:</string>
+    <string name="phone1">رقم الهاتف</string>
+    <string name="save_address">حفظ العنوان</string>
+    <string name="shpping_cart">عربة التسوق</string>
+    <string name="proceed_to_checkout">تكملة عملية الشراء</string>
+    <string name="next">التالى</string>
+    <string name="previous">السابق</string>
+    <string name="zip">"الرمز البريدي "</string>
+    <string name="no_available_coupons">"لا توجد قسائم متاحة "</string>
+    <string name="sub_total">المجموع الفرعي:</string>
+    <string name="your_profile">"ملفك الشخصي "</string>
+    <string name="usd_t">دولار أمريكي</string>
+    <string name="eur_t_u20ac">"يورو"</string>
+    <string name="email">"البريد الإلكتروني "</string>
+    <string name="system_default">الافتراضي</string>
+    <string name="contact_us">تواصل معنا!</string>
+    <string name="welcome_to_our_application">أهلا بك فى تطبيقنا</string>
+    <string name="contact_us_dialog_text">إذا وجدت أي مشكلة ، يرجى إرسال بريد إلكتروني إلينا لتحسين خدماتنا.</string>
+    <string name="send_email">أرسال بريد الكترونى</string>
+    <string name="cancel">الغاء</string>
+    <string name="subCategories">فئة</string>
+    <string name="Orders">الطلبات</string>
+    <string name="orderDetails">تفاصيل الطلب</string>
+    <string name="address2">العنوان:</string>
+    <string name="TotalPrice">الأجمالى:</string>
+    <string name="Quantity">الكمية:</string>
+    <string name="orderSummary">ملخص الطلب</string>
+    <string name="phoneNum">رقم التليفون</string>
+    <string name="YourItems">منتجاتك</string>
+    <string name="YourOrder">طلبك</string>
+    <string name="fees">ضريبة</string>
+    <string name="yourAddress">عنوانك</string>
+    <string name="paymentMethod">طريقة الدفع</string>
+    <string name="noData">لم يتم العثور علي شئ</string>
+    <string name="noOrder">"لا توجد طلبات جارية"</string>
+    <string name="applay">تطبيق</string>
+    <string name="noItem">"لا يوجد منتج في سلتك"</string>
+    <string name="noResultFound">لا يوجد نواتج بحث </string>
+    <string name="noWhishlist">لا يوجد مفضلة لديك</string>
+    <string name="noFav">"حاليا لا يوجد محفوظ في المضلة لديك"</string>
+
+    <string name="no_data_to_display">لا يوجد بيانات للعرض</string>
+
+    <string name="choose_address">احتار عنوان</string>
+    <string name="please_select_your_shipping_address">من فضلك اختار عنوانك او اضغط على علامة الاضافة لاضافة عنوان جديد.</string>
+    <string name="varaince">ألأنواع</string>
+    <string name="_0_0">0.0</string>
+    <string name="discount">خصم:</string>
+    <string name="click_here_to_choose_location">أضغط هنا لأختيار موقعك</string>
+    <string name="write_any_city_name">أكتب اسم اى مدينة </string>
+    <string name="shipping_info">بيانات التوصيل</string>
+    <string name="place_order">أتمام الطلب</string>
+    <string name="apply">تطبيق</string>
+    <string name="add_discount_code">أضافة كود خصم</string>
+    <string name="visa">الدفع بالبطاقة</string>
+    <string name="cash">نقدا</string>
+    <string name="payment_method">طريقة الدفع</string>
+    <string name="confirm_payment">تأكيد الدفع</string>
+    <string name="reload">اعادةالتحميل</string>
+    <string name="delete">Delete</string>
+    <string name="continue_to_payment">التكملة الى الدفع</string>
+    <string name="choose">اختار ماركتك المفضلة</string>
+    <string name="Home">الرئيسية</string>
+    <string name="Category">التصنيفات</string>
+    <string name="share_our_app">مشاركة التطبيق</string>
+    <string name="orderId">Order Id</string>
+
+
+    <string-array name="currency_options">
+    <item>جنيه مصرى</item>
+    <item>دولار أمريكي  $</item>
+    <item>يورو €</item>
+    </string-array>
+
+
+</resources>
